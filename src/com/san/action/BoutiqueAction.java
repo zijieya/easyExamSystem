@@ -27,6 +27,7 @@ public class BoutiqueAction extends BaseAction<Subject>{
 		int allIntSubject=Integer.parseInt(allSubject);
 		String boutIdstr=getRequest().getSession().getAttribute("boutId").toString();
 		int boutId=Integer.parseInt(boutIdstr);
+
 		List<Subject> boutiqueSubjectList=(List<Subject>)getRequest().getSession().getAttribute("boutiqueSubjectList");
 		Subject nowBoutiqueSubject=null;
 		if(boutId<allIntSubject){	//还有题目可做
