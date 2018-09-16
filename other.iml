@@ -4,14 +4,55 @@
     <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-3.1.12-bin.jar!/" />
     <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/javax.mail-1.5.1.jar!/" />
     <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-dbutils-1.4.jar!/" />
-    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
     <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-beanutils-1.8.3.jar!/" />
     <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/jstl.jar!/" />
     <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/standard.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-collections-3.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-lang-2.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/ezmorph-1.0.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/json-lib-2.4-jdk15.jar!/" />
     <conelement value="com.genuitec.eclipse.j2eedt.core.J2EE14_CONTAINER" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
     </src_description>
+  </component>
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/WebRoot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/WebRoot" relative="/" />
+        </webroots>
+      </configuration>
+      <facet type="Struts2" name="Struts 2">
+        <configuration>
+          <fileset id="s2fileset" name="My Fileset " removed="false">
+            <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/struts2-core-2.3.34.jar!/struts-default.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-boutique.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-changePassword.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts-default.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-gradeHistory.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-integration.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-manageResource.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-manageSubject.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-manageUsers.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-question.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-resource.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-resourceHistory.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-sharearea.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-subject.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-user.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts/struts-useRecord.xml</file>
+            <file>file://$MODULE_DIR$/src/com/san/config/struts.xml</file>
+          </fileset>
+          <propertiesKeys disabled="false" />
+        </configuration>
+      </facet>
+    </facet>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/WebRoot/WEB-INF/classes" />
@@ -21,7 +62,6 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" name="com.genuitec.eclipse.j2eedt.core.J2EE14_CONTAINER" level="application" />
     <orderEntry type="module-library">
       <library name="junit4">
         <CLASSES>
@@ -59,15 +99,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="c3p0-0.9.1.2.jar">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="commons-beanutils-1.8.3.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-beanutils-1.8.3.jar!/" />
@@ -92,6 +123,79 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="c3p0-0.9.1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-collections-3.2.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-collections-3.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-lang-2.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-lang-2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ezmorph-1.0.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/ezmorph-1.0.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json-lib-2.4-jdk15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/json-lib-2.4-jdk15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/谷歌下载/apache-tomcat-8.5.28/lib/servlet-api.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
   </component>

@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags" prefix="s"%>
+<% String context=request.getContextPath(); %>
+<%
+	StringBuffer basePath=request.getRequestURL();
+%>
+<base href="<%=basePath %>">
 <!doctype html>
 <html lang="en">
 <head>

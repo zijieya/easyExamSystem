@@ -2,6 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags" prefix="s"%>
 <%request.setCharacterEncoding("utf-8");response.setContentType("text/html;charset=utf-8"); %>
+<% String context=request.getContextPath(); %>
+<%
+    StringBuffer basePath=request.getRequestURL();
+%>
+<base href="<%=basePath %>">
 <!DOCTYPE html>
 <html>
 <head>

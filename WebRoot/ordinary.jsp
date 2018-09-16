@@ -4,6 +4,11 @@
 <%request.setCharacterEncoding("utf-8");response.setContentType("text/html;charset=utf-8"); %>
 <%@page import="com.san.model.Subject"%><!DOCTYPE html>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<% String context=request.getContextPath(); %>
+<%
+	StringBuffer basePath=request.getRequestURL();
+%>
+<base href="<%=basePath %>">
 <html lang="en">
 <head>
     <meta charset="UTF-8">

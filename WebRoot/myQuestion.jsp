@@ -2,6 +2,12 @@
     pageEncoding="UTF-8"%>
 <%request.setCharacterEncoding("utf-8");response.setContentType("text/html;charset=utf-8"); %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
+<%
+<% String context=request.getContextPath(); %>
+<%
+	StringBuffer basePath=request.getRequestURL();
+%>
+<base href="<%=basePath %>">
 <!DOCTYPE html>
 <html lang="en">
 <head>

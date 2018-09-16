@@ -11,7 +11,12 @@
 
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="s"uri="/struts-tags"%>  
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<% String context=request.getContextPath(); %>
+<%
+    StringBuffer basePath=request.getRequestURL();
+%>
+<base href="<%=basePath %>">
 <!DOCTYPE html>
 <html lang="en">
 <head>
